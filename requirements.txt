@@ -1,0 +1,4 @@
+selenium
+baidu_api
+baidu_aip
+pywin32
