@@ -61,7 +61,7 @@ python3 selenium_loginbrute.py
   selenium_loginbrute(baidu).py
   
   # 调用第三方平台API的代码
-  selenium_loginbrute(Coding platform).py
+  selenium_loginbrute(Coding).py
   ~~~
 
 ### 新想法
