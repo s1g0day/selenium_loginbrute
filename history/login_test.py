@@ -10,9 +10,6 @@ from selenium import webdriver
 from PIL import Image
 from aip import AipOcr
 import time
-import win32api
-import win32con
-import win32clipboard
 import re
 
 

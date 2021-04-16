@@ -8,7 +8,6 @@ version: '0.3'
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from PIL import Image
-from aip import AipOcr
 import time
 import re
 import base64
