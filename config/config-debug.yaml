@@ -1,0 +1,30 @@
+# chromedriver 配置
+CHROMEPATH: "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+DRIVERPATH: "config/chromedriver_win32/chromedriver.exe"
+
+# 字典配置
+username: "config/dic/debug_user.txt"
+password: "config/dic/debug_pass.txt"
+# username: "config/dic/top500user.txt"
+# password: "config/dic/password.txt"
+
+# url 配置
+url: "http://localhost/admin"
+requests_url: "http://localhost/public/admin/public/dologin.html"
+login_success: "welcome|登录成功"
+login_failed: "登录失败|Login fail|用户名或密码错误|密码错误|登陆的帐号不存在|账号或密码错误|无效的用户信息"
+captcha_error: "验证码不正确|验证码输入错误|请输入正确验证码|验证码错误"
+
+# 登录方法配置 selenium、 requests
+login_config: "selenium"
+
+# selenium 配置
+headless: False  # 无界模式
+
+# xpath配置
+# 如果有引号注意转义：//*[@id="TxtAN"]  转为 //*[@id=\"TxtAN\"]
+username_data_xpath: "//*[@id=\"input_username\"]"  # 用户名输入框XPath
+password_data_xpath: "//*[@id=\"input_password\"]"  # 密码输入框XPath
+captcha_data_xpath: "//*[@id=\"login-page\"]/body/div[2]/div/div/div/form/div[3]/div/input[1]"  # 验证码输入框XPath
+captcha_update_xpath: "//*[@id=\"login-page\"]/body/div[2]/div/div/div/form/div[3]/div/img"  # 验证码更新按钮XPath
+button_xpath: "//*[@id=\"login-page\"]/body/div[2]/div/div/div/form/div[4]/button"  # 登录按钮XPath
